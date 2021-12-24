@@ -7,10 +7,9 @@ https://user-images.githubusercontent.com/65944284/147368602-a26839da-a62b-4afc-
 
 
 # Beat Recommender
-Ever liked a particular beat, but struggled to find similar beats,<br>
-Well we have a solution for this,<br>
-Introducing beat recommender build with [JINA](https://docs.jina.ai/) 
 
+Introducing to you beat recommender build with [**JINA**](https://docs.jina.ai/) <br>
+With over **9.5k+ beats embedded**, it hold one stop solution for beat recommendation.
 <br>
 <br>
 
