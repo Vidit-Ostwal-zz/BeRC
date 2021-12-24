@@ -1,7 +1,60 @@
+
+
+https://user-images.githubusercontent.com/65944284/147368602-a26839da-a62b-4afc-bc70-5f483d290680.mp4
+
+
+
+
+
 # Beat Recommender
 Ever liked a particular beat, but struggled to find similar beats,<br>
 Well we have a solution for this,<br>
-Introducing beat recommender build with JINA 
+Introducing beat recommender build with [JINA](https://docs.jina.ai/) 
+
+<br>
+<br>
+
+# What is JINA ?
+<p align="center">
+<!--startmsg-->
+
+<!--endmsg-->
+</p>
+<p align="center">
+<a href="https://docs.jina.ai"><img src="https://github.com/jina-ai/jina/blob/master/.github/logo-only.gif?raw=true" alt="Jina logo: Jina is a cloud-native neural search framework" width="200px"></a>
+</p>
+
+<p align="center">
+<b>Cloud-Native Neural Search<sup><a href="https://docs.jina.ai/get-started/neural-search/">?</a></sup> Framework for <i>Any</i> Kind of Data</b>
+</p>
+
+
+<p align=center>
+<a href="https://pypi.org/project/jina/"><img src="https://github.com/jina-ai/jina/blob/master/.github/badges/python-badge.svg?raw=true" alt="Python 3.7 3.8 3.9" title="Jina supports Python 3.7 and above"></a>
+<a href="https://pypi.org/project/jina/"><img src="https://img.shields.io/pypi/v/jina?color=%23099cec&amp;label=PyPI&amp;logo=pypi&amp;logoColor=white" alt="PyPI"></a>
+<a href="https://hub.docker.com/r/jinaai/jina/tags"><img src="https://img.shields.io/docker/v/jinaai/jina?color=%23099cec&amp;label=Docker&amp;logo=docker&amp;logoColor=white&amp;sort=semver" alt="Docker Image Version (latest semver)"></a>
+<a href="https://codecov.io/gh/jina-ai/jina"><img src="https://codecov.io/gh/jina-ai/jina/branch/master/graph/badge.svg" alt="codecov"></a>
+<a href="https://slack.jina.ai"><img src="https://img.shields.io/badge/Slack-2.2k%2B-blueviolet?logo=slack&amp;logoColor=white"></a>
+</p>
+
+<!-- start elevator-pitch -->
+
+Jina is a neural search framework that empowers anyone to build SOTA and scalable deep learning search applications in minutes.
+
+⏱️ **Save time** - *The* design pattern of neural search systems. Native support for PyTorch/Keras/ONNX/Paddle. Build solutions in just minutes.
+
+🌌 **All data types** - Process, index, query, and understand videos, images, long/short text, audio, source code, PDFs, etc.
+
+🌩️ **Local & cloud friendly** - Distributed architecture, scalable & cloud-native from day one. Same developer experience on both local and cloud. 
+
+🍱 **Own your stack** - Keep end-to-end stack ownership of your solution. Avoid integration pitfalls you get with
+fragmented, multi-vendor, generic legacy tools.
+
+More Information can be find [here](https://docs.jina.ai/)
+<!-- end elevator-pitch -->
+
+<br>
+<br>
 
 # DataSet Used
 - The dataset includes ~9.5k samples unequally distributed among 41 categories. The minimum number of audio samples per category in the train set is 94, and the maximum 300. The duration of the audio samples ranges from 300ms to 30s due to the diversity of the sound categories and the preferences of Freesound users when recording sounds. The total duration of the train set is roughly 18h.
