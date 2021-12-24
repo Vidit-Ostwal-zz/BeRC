@@ -8,4 +8,6 @@ Introducing beat recommender build with JINA
 
 - Out of the ~9.5k samples from the train set, ~3.7k have manually-verified ground truth annotations and ~5.8k have non-verified annotations. The non-verified annotations of the train set have a quality estimate of at least 65-70% in each category. Checkout the Data labeling process section below for more information about this aspect.
 
+- All audio samples in this dataset are gathered from [Freesound](https://freesound.org/) and are provided here as uncompressed PCM 16 bit, 44.1 kHz, mono audio files. Note that because Freesound content is collaboratively contributed, recording quality and techniques can vary widely
+
 - More information can be found [here](https://zenodo.org/record/2552860#.XFD05fwo-V4)
