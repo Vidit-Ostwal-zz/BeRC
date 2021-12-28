@@ -49,7 +49,7 @@ Jina is a neural search framework that empowers anyone to build SOTA and scalabl
 🍱 **Own your stack** - Keep end-to-end stack ownership of your solution. Avoid integration pitfalls you get with
 fragmented, multi-vendor, generic legacy tools.
 
-More Information can be find [here](https://docs.jina.ai/)
+More Information can be found [here](https://docs.jina.ai/)
 <!-- end elevator-pitch -->
 
 <br>
