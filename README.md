@@ -63,3 +63,5 @@ More Information can be found [here](https://docs.jina.ai/)
 - All audio samples in this dataset are gathered from [Freesound](https://freesound.org/) and are provided here as uncompressed PCM 16 bit, 44.1 kHz, mono audio files. Note that because Freesound content is collaboratively contributed, recording quality and techniques can vary widely
 
 - More information can be found [here](https://zenodo.org/record/2552860#.XFD05fwo-V4)
+
+- Dataset can also be found [here](https://drive.google.com/drive/folders/1n8Ec9y1jZZc0qBAhwf6lYwjlEtn4NmSi?usp=sharing)
