@@ -1,11 +1,4 @@
 
-
-https://user-images.githubusercontent.com/65944284/147368602-a26839da-a62b-4afc-bc70-5f483d290680.mp4
-
-
-
-
-
 # Beat Recommender
 
 Introducing to you beat recommender build with [**JINA**](https://docs.jina.ai/) <br>
