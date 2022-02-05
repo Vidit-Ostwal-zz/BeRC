@@ -1,6 +1,5 @@
 # BeRC
 BeRC (Beat Recommender) - Using this project one can enter any beat and search similar beats! The project is make using Jina AI which is a neural search engine.
-Check the original issue [here]().
 
 ## Idea:
 Create a search hinge for beats using Jina
