@@ -1,5 +1,5 @@
-from jina import DocumentArray, Flow
-from jina.types.document.generators import from_files
+from docarray import Document, DocumentArray
+from jina import Executor, Flow, requests
 
 def check_query(resp):
     for d in resp.docs:
@@ -9,7 +9,7 @@ def check_query(resp):
 
 
 def main():
-    docs = DocumentArray(from_files("data/*.wav"))
+    docs = DocumentArray.from_files("data/*.wav")
 
     f = Flow.load_config("flow.yml")
     with f:
