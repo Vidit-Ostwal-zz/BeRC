@@ -18,7 +18,7 @@ Made with ❤️
 - Download the AudioCLIP model by running:
 
 ```
-bash scripts/download_models.sh
+bash scripts/download_model.sh
 ```
 
 Create a virtual environment

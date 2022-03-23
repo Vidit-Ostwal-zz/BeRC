@@ -11,22 +11,22 @@ executors:
       py_modules:
           - executors.py
     - name: "encoder"
-      uses: "jinahub://VGGishAudioEncoder"
+      uses: "jinahub://VGGishAudioEncoder/v0.6"
       uses_with:
-          traversal_paths: ["c"]
+          traversal_paths: "@c"
           load_input_from: "waveform"
           min_duration: 4
-      install_requirements: "True"
+      install_requirements: True
       volumes:
           - "./models:/workspace/models"
     - name: "indexer"
-      uses: "jinahub://SimpleIndexer"
+      uses: "jinahub://SimpleIndexer/v0.15"
       uses_with:
           match_args:
               limit: 5
-              traversal_rdarray: ["c"]
-              traversal_ldarray: ["c"]
-      install_requirements: "True"
+          traversal_left: "@c"
+          traversal_right: "@c"
+      install_requirements: True
     - name: ranker
       uses: MyRanker
       py_modules:

@@ -1,23 +1,21 @@
 #!/bin/sh
-export MODEL_DIR=models
+MODEL_DIR=models
+DATA_DIR=data
+REPO_DIR=audioset_tagging_cnn
 
 mkdir -p ${MODEL_DIR}
-if [ ! -f "${MODEL_DIR}/AudioCLIP-Full-Training.pt" ]; then
-    echo "Downloading model"
-    echo "------ Download AudioCLIP model ------"
-    wget -q https://github.com/AndreyGuzhov/AudioCLIP/releases/download/v0.1/AudioCLIP-Full-Training.pt
-    file="$(ls -lh ./)" && echo $file
-    mv AudioCLIP-Full-Training.pt ${MODEL_DIR}/AudioCLIP-Full-Training.pt
 
+if [ ! -f "${MODEL_DIR}/vggish_model.ckpt" ]; then
+  echo "Downloading model"
+  echo "------ Download Vggish model ------"
+  curl https://storage.googleapis.com/audioset/vggish_model.ckpt --output ${MODEL_DIR}/vggish_model.ckpt
 else
-    echo "Model already exists! Skipping."
+  echo "VGGish model already exists! Skipping."
 fi
 
-if [ ! -f "${MODEL_DIR}/bpe_simple_vocab_16e6.txt.gz" ]; then
-    echo "Downloading vocab"
-    echo "------ Download vocab ------"
-    wget -q https://github.com/AndreyGuzhov/AudioCLIP/releases/download/v0.1/bpe_simple_vocab_16e6.txt.gz
-    mv bpe_simple_vocab_16e6.txt.gz ${MODEL_DIR}/bpe_simple_vocab_16e6.txt.gz
+if [ ! -f "${MODEL_DIR}/vggish_pca_params.npz" ]; then
+  echo "------ Download PCA model ------"
+  curl https://storage.googleapis.com/audioset/vggish_pca_params.npz --output ${MODEL_DIR}/vggish_pca_params.npz
 else
-    echo "Vocab already exists! Skipping."
+  echo "PCA model already exists! Skipping."
 fi

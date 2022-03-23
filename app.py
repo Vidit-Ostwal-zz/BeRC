@@ -12,11 +12,11 @@ def main():
     docs = DocumentArray.from_files("data/*.wav")
 
     f = Flow.load_config("flow.yml")
+    f.protocol = "http"
+    f.cors = True
     with f:
         f.post(on="/index", inputs=docs)
         f.post(on="/search", inputs=docs, on_done=check_query)
-        f.protocol = "http"
-        f.cors = True
         f.block()
 
 
